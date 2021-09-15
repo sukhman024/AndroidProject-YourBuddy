@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PermanentResidenceStep3GovProtalsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00c853"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <ImageView
+            android:id="@+id/logoXmarks"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/user" />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="4"
+            android:shadowColor="#000000"
+            android:text="3.Apply on Gov Portals"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/info" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_apply_medicare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:cardCornerRadius="3dp"
+        app:contentPadding="2dp"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="5"
+            >
+
+            <CheckBox
+                android:id="@+id/cb_apply_medicare"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:elevation="5dp"
+                android:paddingLeft="10dp"
+                android:scaleType="centerCrop"
+                android:text="Apply for medicare card\n\n1. Visit official gov site\n2.Collect necessary documents\n3. Apply for medicare card by visiting gov office"
+                android:maxLines="5"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="95dp"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="4dp"
+                android:background="#c0c0c0"
+                android:shadowColor="#000000"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="5"/>
+            <TextView
+                android:id="@+id/status_apply_medicare"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="4"
+                android:text="Not Started"
+                android:background="#607D8B"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_apply_tfn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:cardCornerRadius="3dp"
+        app:contentPadding="2dp"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="5"
+            >
+
+            <CheckBox
+                android:id="@+id/cb_apply_tfn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:elevation="5dp"
+                android:paddingLeft="10dp"
+                android:scaleType="centerCrop"
+                android:text="Apply for TFN and ABN.\nExperts/Consultnts/Website:\n1.TFN and ABN are needed by tax office\n2.You can apply for them online\n3. For help call:123456"
+                android:maxLines="5"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="95dp"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="4dp"
+                android:background="#c0c0c0"
+                android:shadowColor="#000000"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="5"/>
+            <TextView
+                android:id="@+id/status_apply_tfn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="4"
+                android:text="Not Started"
+                android:background="#607D8B"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_apply_license"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:cardCornerRadius="3dp"
+        app:contentPadding="2dp"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="5"
+            >
+
+            <CheckBox
+                android:id="@+id/cb_apply_license"
+                android:layout_width="50dp"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:elevation="5dp"
+                android:paddingLeft="10dp"
+                android:scaleType="centerCrop"
+                android:text="Apply for Australian License b.\nExperts/Consultnts/Website:\n1.Visit Vic Roads website\n2.Make my trip\n3. Book test and start process"
+                android:maxLines="5"
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="95dp"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="4dp"
+                android:background="#c0c0c0"
+                android:shadowColor="#000000"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="5"/>
+            <TextView
+                android:id="@+id/status_apply_license"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="4"
+                android:text="Not Started"
+                android:background="#607D8B"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btn_done_pr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.579" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
